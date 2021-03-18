@@ -34,9 +34,6 @@ pipeline {
         sh "printenv"
         echo "pre-build"
         echo "test 1"
-        sh 'npm config set registry https://registry.npm.taobao.org'
-        sh 'npm install'
-        sh 'node app.js'
       }
     }
     
