@@ -3,6 +3,12 @@ pipeline {
   
   environment {
     Name = 'Test'
+    cacheDir = "stage"
+    cachePackage = "${cacheDir}/package.json"
+    cacheCommitIDFile = "${cacheDir}/.commitIDCache.txt"
+    artifactsDir = "${cacheDir}/artifacts"
+    resetFlagFile = "${cacheDir}/.resetFile"
+    cacheCommitIDMax = 3
   }
 
   options {
@@ -28,6 +34,7 @@ pipeline {
         sh "printenv"
         echo "pre-build"
         echo "test 1"
+        sh './scripts/pre-build.sh'
       }
     }
     
