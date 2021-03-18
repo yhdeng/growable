@@ -53,6 +53,10 @@ pipeline {
               reuseNode true
             }
           }
+          
+          steps {
+            echo "build"
+          }
         }
       }
     }
