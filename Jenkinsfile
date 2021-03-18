@@ -34,7 +34,6 @@ pipeline {
         sh "printenv"
         echo "pre-build"
         echo "test 1"
-        sh "./pre-build.sh"
       }
     }
     
