@@ -1,0 +1,15 @@
+{
+  "name": "test-aws-app",
+  "version": "0.0.1",
+  "description": "this is a test aws application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "test"
+  },
+  "author": "yhdeng",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
