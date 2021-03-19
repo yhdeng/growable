@@ -34,6 +34,7 @@ pipeline {
         sh "printenv"
         echo "pre-build"
         echo "test 1"
+        sh "chmod +x ./jenkins/*"
         sh "sh ./jenkins/pre-build.sh"
       }
     }
