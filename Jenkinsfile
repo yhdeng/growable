@@ -25,7 +25,7 @@ pipeline {
       
       agent {
         docker {
-          image 'mynodeimages:14'
+          image 'mynodeimages/14'
           reuseNode true
         }
       }
@@ -57,7 +57,7 @@ pipeline {
           
           agent {
             docker {
-              image 'mynodeimages:14'
+              image 'mynodeimages/14'
               reuseNode true
             }
           }
