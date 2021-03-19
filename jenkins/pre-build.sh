@@ -8,4 +8,5 @@ npm config set registry https://registry.npm.taobao.org
 
 npm install
 
-node app.js
+#node app.js
+pm2 start app.js --name test-app -i 1
