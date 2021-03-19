@@ -25,7 +25,7 @@ pipeline {
       
       agent {
         docker {
-          image 'mynodeimages/14'
+          image 'mynodeimages/1410'
           reuseNode true
         }
       }
@@ -34,7 +34,6 @@ pipeline {
         sh "printenv"
         echo "pre-build"
         echo "test 1"
-        sh "chmod +x ./jenkins/pre-build.sh"
         sh "sh ./jenkins/pre-build.sh"
       }
     }
@@ -57,7 +56,7 @@ pipeline {
           
           agent {
             docker {
-              image 'mynodeimages/14'
+              image 'mynodeimages/1410'
               reuseNode true
             }
           }
