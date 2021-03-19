@@ -6,6 +6,8 @@ packageJsonChange=false
 
 npm config set registry https://registry.npm.taobao.org
 
+cd /opt/nodeapp/growable
+
 npm install
 
 #node app.js
